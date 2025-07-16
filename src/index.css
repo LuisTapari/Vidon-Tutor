@@ -1,14 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
-@import "tailwindcss";
-@theme {
-  --color.primary: #2563EB;
-  --color.secondary: #FBBF24;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  /* Colores Vidón Bar */
+  --vidon-black: #0F0F0F;
+  --vidon-green: #009B7D;
+  --vidon-gray: #B3B3B3;
+  --vidon-white: #FFFFFF;
+
+  /* Tipografía */
+  --font-sans: 'Poppins', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--vidon-black);
+  color: var(--vidon-white);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+a,
+button {
+  font-family: var(--font-sans);
 }
 
 
-*{
-  font-family: Outfit;
+/* Márgenes y paddings */
+.mt-4 {
+  margin-top: 1rem;
 }
-.font-playfair {
-  font-family: Playfair !important;
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
+
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Textos */
+.text-green {
+  color: var(--vidon-green);
+}
+
+.text-gray {
+  color: var(--vidon-gray);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+.btn-primary {
+  background-color: var(--vidon-green);
+  color: var(--vidon-white);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
