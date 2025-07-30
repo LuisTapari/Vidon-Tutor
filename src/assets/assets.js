@@ -1,4 +1,5 @@
-import logo from './logo.svg'
+import logo from './logo01blanco.png'
+import einstein from './EINSTEIN editado VIDON-02.png'
 import searchIcon from './searchIcon.svg'
 import userIcon from './userIcon.svg'
 import calenderIcon from './calenderIcon.svg'
@@ -40,6 +41,7 @@ import totalRevenueIcon from "./totalRevenueIcon.svg";
 
 
 export const assets = {
+    einstein,
     logo,
     searchIcon,
     userIcon,

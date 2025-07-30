@@ -1,80 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import "tailwindcss";
 
+/* 3. Variables CSS globales */
 :root {
-  /* Colores Vidón Bar */
-  --vidon-black: #0F0F0F;
-  --vidon-green: #009B7D;
-  --vidon-gray: #B3B3B3;
-  --vidon-white: #FFFFFF;
-
-  /* Tipografía */
-  --font-sans: 'Poppins', sans-serif;
+  --vidon-black:   #0F0F0F;
+  --vidon-green:   #009B7D;
+  --vidon-gray:    #B3B3B3;
+  --vidon-white:   #FFFFFF;
+  --font-sans:     'Poppins', sans-serif;
 }
-body {
+
+/* 4. Estilos globales */
+/* body {
   margin: 0;
   padding: 0;
   background-color: var(--vidon-black);
-  color: var(--vidon-white);
+  color:            var(--vidon-white);
+  font-family:      var(--font-sans);
+} */
+/* a, button {
   font-family: var(--font-sans);
-  line-height: 1.6;
+  color:       var(--vidon-white);
+  text-decoration: none;
 }
 
-a,
-button {
-  font-family: var(--font-sans);
-}
+/* 5. Utilidades personalizadas */
+/* .mt-4        { margin-top: 1rem; }
+.mb-4        { margin-bottom: 1rem; }
+.pt-6        { padding-top: 1.5rem; }
+.px-8        { padding-left: 2rem; padding-right: 2rem; }
+.text-green  { color: var(--vidon-green); }
+.text-gray   { color: var(--vidon-gray); }
+.text-center { text-align: center; }
+.text-xl     { font-size: 1.25rem; }
+.font-semibold { font-weight: 600; } */
 
-
-/* Márgenes y paddings */
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-/* Textos */
-.text-green {
-  color: var(--vidon-green);
-}
-
-.text-gray {
-  color: var(--vidon-gray);
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-.btn-primary {
+/* 6. Botón primario Vidón */
+/* .btn-primary {
   background-color: var(--vidon-green);
-  color: var(--vidon-white);
-  border: none;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: opacity 0.2s;
-}
+  color:            var(--vidon-white);
+  padding:          .75rem 1.5rem;
+  border:           none;
+  border-radius:    .5rem;
+  cursor:           pointer;
+  transition:       opacity .2s;
+} */
+/* .btn-primary:hover {
+  opacity: .85;
+} */
 
-.btn-primary:hover {
-  opacity: 0.85;
+/* 7. Header y navegación */
+/* .header {
+  display:        flex;
+  justify-content: space-between;
+  padding:        1rem 2rem;
 }
-
+.nav-links {
+  display: flex;
+  gap:     1.5rem;
+}
+.nav-links a:hover {
+  color: var(--vidon-green);
+} */ 

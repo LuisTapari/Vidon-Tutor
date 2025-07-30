@@ -47,7 +47,7 @@ const Navbar = () => {
 
                 {/* Logo */}
                 <Link to="/">
-                    <img src={assets.logo} alt="logo" className={`h-9 ${isScrolled && "invert opacity-80"}`} />
+                    <img src={assets.logo} alt="logo" className={`h-10 w-30  ${isScrolled && "invert opacity-80"}`} />
                 </Link>
 
                 {/* Desktop Nav */}
@@ -58,28 +58,12 @@ const Navbar = () => {
                             <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                         </a>
                     ))}
-                    <button className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
-                        Dashboard
-                    </button>
+                    
                 </div>
 
                 {/* Desktop Right */}
                 <div className="hidden md:flex items-center gap-4">
-                    <img src={assets.searchIcon} alt="search" className={`${isScrolled && "invert"} h-7 transition-all duration-500`} />
-
-                    {user ? 
-                    (<UserButton>
-                        <UserButton.MenuItems>
-                            <UserButton.Action label='My Bookings' labelIcon={<BookIcon/>} onClick={() => navigate("/my-bookings")}/>
-                        </UserButton.MenuItems>
-                    </UserButton>)
-                    :
-                    (<button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full ml-4 transition-all duration-500">
-                        Login
-                    </button>)
-                }
-
-                    
+                    <img src={assets.einstein} alt="einstein-vidon" className={`h-10 w-10  ${isScrolled}`} />
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -109,13 +93,13 @@ const Navbar = () => {
                         </a>
                     ))}
 
-                    {user && <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all" onClick={() => navigate("/my-bookings")}>
+                    {/* {user && <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all" onClick={() => navigate("/my-bookings")}>
                         Dashboard
                     </button>}
 
                     {!user && <button onClick={openSignIn} className="bg-black text-white px-8 py-2.5 rounded-full transition-all duration-500">
                         Login
-                    </button>}
+                    </button>} */}
                 </div>
             </nav>
     );
