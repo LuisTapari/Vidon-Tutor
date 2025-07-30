@@ -10,6 +10,8 @@ import Layout from './Pages/hotelOwner/Layout'
 import Dashboard from './Pages/hotelOwner/Dashboard'
 import AddRoom from './Pages/hotelOwner/addRoom'
 import ListRoom from './Pages/hotelOwner/ListRoom'
+import CocinaPage from './Pages/CocinaPage'
+import SalonPage from './Pages/SalonPage'
 
 const App = () => {
   const { pathname } = useLocation()
@@ -22,6 +24,8 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/rooms' element={<AllRooms />} />
+          <Route path="/cocina" element={<CocinaPage />} />
+          <Route path="/salon" element={<SalonPage />} />
           <Route path='/rooms/:id' element={<RoomDetails />} />
           <Route path='/my-bookings' element={<MyBookings />} />
           <Route path='/owner' element={<Layout />}>
