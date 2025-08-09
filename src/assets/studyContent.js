@@ -136,17 +136,6 @@ export const introduccionContent = [
             },
             {
                 type: 'table',
-                title: 'Ensaladas',
-                showInIndex: true,
-                columns: ['Variedad', 'Descripción', 'Precio'],
-                data: [
-                    ['Completa', 'Lechuga, tomate, huevo, cebolla, repollo y zanahoria', '$9.500'],
-                    ['Caesar', 'Lechuga, croutones, queso, pollo, salsa caesar', '$9.500'],
-                    ['Vidón', 'Rúcula, lechuga, tomate, jamón cocido, palmitos, champiñones, huevo y queso', '$9.500']
-                ]
-            },
-            {
-                type: 'table',
                 title: 'Postres',
                 showInIndex: true,
                 columns: ['Variedad', 'Precio'],

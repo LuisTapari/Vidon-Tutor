@@ -3,7 +3,7 @@ import { assets, cities } from '../assets/assets'
 
 const Hero = () => {
     return (
-        <div className='flex flex-col items-start justify-center px-6 md:px-16 pt-10 lg:px-24 xl:px-32 text-[var(--blanco-hueso)] h-screen relative overflow-hidden'>
+        <div className='flex flex-col items-start justify-center px-6 md:px-16 pt-4 lg:px-24 xl:px-32 text-[var(--blanco-hueso)] h-screen relative overflow-hidden'>
             {/* Elemento decorativo de fondo */}
             <div className="bg-[var(--verde-vidon)] absolute inset-0 z-1">
                 <div className="bg-gradient-to-br from-[var(--verde-vidon)] via-[var(--verde-vidon)] to-transparent h-full w-full absolute inset-0"></div>
