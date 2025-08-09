@@ -1,64 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 @import "tailwindcss";
 
-/* 3. Variables CSS globales */
 :root {
-  --vidon-black:   #0F0F0F;
-  --vidon-green:   #009B7D;
-  --vidon-gray:    #B3B3B3;
-  --vidon-white:   #FFFFFF;
-  --font-sans:     'Poppins', sans-serif;
+  --verde-vidon: #177C3F;
+  --verde-oscuro: #2D583F;
+  --blanco-hueso: #F4F1EC;
+  --negro-suave: #1D1D1D;
+  --marron-claro: #A8795E;
 }
 
-/* 4. Estilos globales */
-/* body {
+html, body, #root {
+  height: 100%;
   margin: 0;
   padding: 0;
-  background-color: var(--vidon-black);
-  color:            var(--vidon-white);
-  font-family:      var(--font-sans);
-} */
-/* a, button {
-  font-family: var(--font-sans);
-  color:       var(--vidon-white);
-  text-decoration: none;
 }
 
-/* 5. Utilidades personalizadas */
-/* .mt-4        { margin-top: 1rem; }
-.mb-4        { margin-bottom: 1rem; }
-.pt-6        { padding-top: 1.5rem; }
-.px-8        { padding-left: 2rem; padding-right: 2rem; }
-.text-green  { color: var(--vidon-green); }
-.text-gray   { color: var(--vidon-gray); }
-.text-center { text-align: center; }
-.text-xl     { font-size: 1.25rem; }
-.font-semibold { font-weight: 600; } */
-
-/* 6. Botón primario Vidón */
-/* .btn-primary {
-  background-color: var(--vidon-green);
-  color:            var(--vidon-white);
-  padding:          .75rem 1.5rem;
-  border:           none;
-  border-radius:    .5rem;
-  cursor:           pointer;
-  transition:       opacity .2s;
-} */
-/* .btn-primary:hover {
-  opacity: .85;
-} */
-
-/* 7. Header y navegación */
-/* .header {
-  display:        flex;
-  justify-content: space-between;
-  padding:        1rem 2rem;
+[id] {
+  scroll-margin-top: 7rem;
 }
-.nav-links {
-  display: flex;
-  gap:     1.5rem;
-}
-.nav-links a:hover {
-  color: var(--vidon-green);
-} */ 

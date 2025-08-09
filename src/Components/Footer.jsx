@@ -1,73 +1,75 @@
 import React from 'react'
-import { assets } from '../assets/Assets'
+import { assets } from '../assets/assets'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return (
-        <div className='bg-[#F6F9fc] text-gray-500/80 pt-8 px-6 md:px-16 lg:px-24 xl:px-32'>
-            <div className='flex flex-wrap justify-between gap-12 md:gap-6'>
-                <div className='max-w-80'>
-                    <img src={assets.logo} alt="logo" className='mb-4 h-8 md:h-9 invert opacity-80' />
-                    <p className='text-sm'>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+        <footer className="bg-[var(--blanco-hueso)] text-[var(--negro-suave)] pt-10 pb-4 px-6 md:px-16 lg:px-24 xl:px-32 w-full">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-10">
+                
+                {/* Logo + texto */}
+                <div className="flex flex-col items-start min-w-[220px]">
+                    <img
+                        src={assets.logo}
+                        alt="logo"
+                        className="mb-3 w-40 h-auto invert opacity-90" // logo más grande
+                    />
+                    <p className="text-base font-semibold text-[var(--verde-vidon)]">
+                        lugar de estudio de los empleados de vidon
                     </p>
-                    <div className='flex items-center gap-3 mt-4'>
-                        {/* Instagram */}
-                        <img src={assets.instagramIcon} alt="instagram-icon" className='w-6' />
-                        {/* Facebook */}
-                        <img src={assets.facebookIcon} alt="facebook-icon" className='w-6' />
-                        {/* Twitter */}
-                        <img src={assets.twitterIcon} alt="twitter-icon" className='w-6' />
-                        {/* LinkedIn */}
-                        <img src={assets.linkendinIcon} alt="linkendin-icon" className='w-6' />
-                    </div>
                 </div>
-
-                <div>
-                    <p className='font-playfair text-lg text-gray-800'>COMPANY</p>
-                    <ul className='mt-3 flex flex-col gap-2 text-sm'>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Press</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Partners</a></li>
+                
+                {/* Navegación central */}
+                <nav className="flex flex-col items-center flex-1">
+                    <ul className="flex flex-col gap-2 text-md font-anton font-semibold"> {/* vertical + letra más chica */}
+                        <li>
+                            <Link to="/introduccion" className="hover:text-[var(--verde-vidon)] transition">
+                                Introducción
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/cocina" className="hover:text-[var(--verde-vidon)] transition">
+                                Cocina
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/salon" className="hover:text-[var(--verde-vidon)] transition">
+                                Salón
+                            </Link>
+                        </li>
                     </ul>
-                </div>
-
-                <div>
-                    <p className='font-playfair text-lg text-gray-800'>SUPPORT</p>
-                    <ul className='mt-3 flex flex-col gap-2 text-sm'>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Safety Information</a></li>
-                        <li><a href="#">Cancellation Options</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                    </ul>
-                </div>
-
-                <div className='max-w-80'>
-                    <p className='font-playfair text-lg text-gray-800'>STAY UPDATED</p>
-                    <p className='mt-3 text-sm'>
-                        Subscribe to our newsletter for inspiration and special offers.
+                </nav>
+                
+                {/* Contacto a la derecha */}
+                <div className="flex flex-col items-center md:items-end min-w-[220px] text-center md:text-right">
+                    <p className="font-semibold text-[var(--verde-vidon)] mb-2">Contacto Vidón</p>
+                    <p className="text-base font-medium">
+                        <span className="font-medium">WhatsApp:</span>{' '}
+                        <a
+                            href="https://wa.me/5493512792796"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[var(--verde-vidon)] hover:underline"
+                        >
+                            +54 9 351 279-2796
+                        </a>
                     </p>
-                    <div className='flex items-center mt-4'>
-                        <input type="text" className='bg-white rounded-l border border-gray-300 h-9 px-3 outline-none' placeholder='Your email' />
-                        <button className='flex items-center justify-center bg-black h-9 w-9 aspect-square rounded-r'>
-                            {/* Arrow icon */}
-                            <img src={assets.arrowIcon} alt="arrow-icon" className='w-3.5 invert' />
-                        </button>
-                    </div>
+                    <p className="text-base mt-1 font-medium">
+                        <span className="font-medium">Dirección:</span>{' '}
+                        <span className="text-[var(--negro-suave)]">
+                            Dr. T. Achaval Rodriguez 152, Córdoba, Argentina
+                        </span>
+                    </p>
                 </div>
             </div>
-            <hr className='border-gray-300 mt-8' />
-            <div className='flex flex-col md:flex-row gap-2 items-center justify-between py-5'>
-                <p>© {new Date().getFullYear()} Vidon Tutor. All rights reserved.</p>
-                <ul className='flex items-center gap-4'>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Terms</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                </ul>
+            
+            {/* Créditos abajo */}
+            <div className="border-t border-[var(--verde-vidon)]/30 pt-2 text-center mt-6">
+                <p className="text-sm text-[var(--negro-suave)]/70">
+                    Creado por <span className="font-semibold text-[var(--verde-vidon)]">Luis Tapari</span> con mucho amor para Vidón
+                </p>
             </div>
-        </div>
+        </footer>
     )
 }
 

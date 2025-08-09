@@ -1,14 +1,14 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import IndicePage from '../Components/IndicePage'
-import { cocinaContent } from '../assets/studyContent'
+import { introduccionContent } from '../assets/studyContent'
 import StudyCardText from '../Components/StudyCardText'
 import StudyCardTable from '../Components/StudyCardTable'
 
-const filteredSections = cocinaContent.filter(section => section.showInIndex)
+const filteredSections = introduccionContent.filter(section => section.showInIndex)
 
-const CocinaPage = () => {
+const IntroduccionPage = () => {
     const [showIndice, setShowIndice] = useState(false)
-    const [openSection, setOpenSection] = useState(null) // para mobile
+    const [openSection, setOpenSection] = useState(null) // Para mobile: track de sección abierta
 
     return (
         <div className="max-w-7xl mx-auto px-4 py-20">
@@ -30,7 +30,7 @@ const CocinaPage = () => {
                 </div>
                 {/* Contenido */}
                 <div className="flex-1">
-                    <h1 className="text-3xl font-black mb-8 mt-2 text-[var(--negro-suave)]">Contenido de Cocina</h1>
+                    <h1 className="text-3xl font-black mb-8 mt-2 text-[var(--negro-suave)]">Introducción General</h1>
                     {filteredSections.map((section, idx) => (
                         <div key={idx} className="mb-12">
                             <h2
@@ -97,7 +97,7 @@ const CocinaPage = () => {
 
             {/* Vista MOBILE */}
             <div className="md:hidden">
-                <h1 className="text-2xl font-black mb-6 text-[var(--negro-suave)]">Contenido de Cocina</h1>
+                <h1 className="text-2xl font-black mb-6 text-[var(--negro-suave)]">Introducción General</h1>
                 {filteredSections.map((section, idx) => (
                     <div key={idx} className="mb-4 border border-[var(--verde-vidon)] rounded-lg overflow-hidden">
                         <button
@@ -166,4 +166,4 @@ const CocinaPage = () => {
     )
 }
 
-export default CocinaPage
+export default IntroduccionPage
